@@ -722,3 +722,5 @@ exp(cbind(OR = coef(m3), confint(m3)))
 
 # Ordinal Logistic regression analysis (CDR divided into 6 categories) ####
 
+#https://stats.oarc.ucla.edu/other/mult-pkg/faq/general/faq-how-do-i-interpret-odds-ratios-in-logistic-regression/
+#https://stats.oarc.ucla.edu/other/mult-pkg/faq/general/faq-how-do-i-interpret-odds-ratios-in-logistic-regression/
