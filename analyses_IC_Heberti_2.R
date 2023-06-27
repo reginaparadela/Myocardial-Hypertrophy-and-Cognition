@@ -463,6 +463,14 @@ car::vif(m)#multicollinearity: vif >10
 df_lvh$age_cat <- ifelse(df_lvh$age >=75, 1, 0)
 df_lvh$age_cat <- as.factor(df_lvh$age_cat)
 
+# Plot the data 
+
+ggplot(df_lvh, aes(x=left_ventr_wall_thickness, y=cdr_sb, col=age_cat))+
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE)
+
+# Regression model with interaction terms 
+
 m3 <- lm(cdr_sb ~ left_ventr_wall_thickness*age_cat
          + education_deceased
          + deceased_sex
