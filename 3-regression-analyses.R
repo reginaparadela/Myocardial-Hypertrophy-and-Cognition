@@ -1,12 +1,12 @@
 setwd("/Users/rparadela/Desktop/Análises R/Pós-doc/Biobanco/Myocardial hypertrophy and cognition - IC Heberti")
 
 # Loading packages ####
-library(tidyverse)
-library(car)
-library(RVAideMemoire)#shapiro by groups 
-library(rstatix) #outliers
-library(DescTools) #post-hoc anova
-library(FSA) #post-hoc kruskal wallis
+if(!require("tidyverse")) install.packages("tidyverse")
+if(!require("car")) install.packages("car")
+if(!require("RVAideMemoire")) install.packages("RVAideMemoire")#shapiro by groups 
+if(!require("rstatix")) install.packages("rstatix")#outliers
+if(!require("DescTools")) install.packages("DescTools")#post-hoc anova
+if(!require("(FSA")) install.packages("FSA")#post-hoc kruskal wallis
 
 # Read in the data ####
 
