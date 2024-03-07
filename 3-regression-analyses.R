@@ -6,7 +6,7 @@ if(!require("car")) install.packages("car")
 if(!require("RVAideMemoire")) install.packages("RVAideMemoire")#shapiro by groups 
 if(!require("rstatix")) install.packages("rstatix")#outliers
 if(!require("DescTools")) install.packages("DescTools")#post-hoc anova
-if(!require("(FSA")) install.packages("FSA")#post-hoc kruskal wallis
+if(!require("FSA")) install.packages("FSA")#post-hoc kruskal wallis
 
 # Read in the data ####
 
